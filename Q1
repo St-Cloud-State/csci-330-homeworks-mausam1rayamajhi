@@ -1,0 +1,264 @@
+Script started on 2025-02-05 01:29:10+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="150" LINES="28"]
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* ;;3,1
+(NOT(EQUAL 3 (ABS -3)))
+
+NIL
+* ;;; 3.2
+(/(+8 12 ) 20 )
+; in: / (8 12)
+;     (8 12)
+; 
+; caught ERROR:
+;   illegal function call
+; 
+; compilation unit finished
+;   caught 1 ERROR condition
+
+debugger invoked on a SB-INT:COMPILED-PROGRAM-ERROR in thread
+#<THREAD "main thread" RUNNING {9461061}>:
+  Execution of a form compiled with errors.
+Form:
+  (8 12)
+Compile-time error:
+  illegal function call
+
+Type HELP for debugger help, or (SB-EXT:EXIT) to exit from SBCL.
+
+restarts (invokable by number or by possibly-abbreviated name):
+  0: [ABORT] Exit debugger, returning to top level.
+
+((LAMBDA ()))
+   source: (8 12)
+0] ^[[C    :q
+
+:Q
+0] (|  (/ ( + 8 12 ) 2 )
+
+10
+0] ;;3.3
+;;Question 3.3
+( + ( EXPT 3 2 ) (EXPT 4 2  ))
+
+25
+0] ''  ;;EX  QUESTION 3.7
+;;ANSWER IN PAPER
+;;
+;;QE UESTION 3.10
+(THIRD       thrid   ird(  ( the quick brown fox))
+; in: / (8 12)
+;     (THE QUICK BROWN FOX)
+; 
+; caught ERROR:
+;   error while parsing arguments to special operator THE:
+;     too many elements in
+;       (QUICK BROWN FOX)
+;     to satisfy lambda list
+;       (SB-C::VALUE-TYPE SB-KERNEL:FORM):
+;     exactly 2 expected, but got 3
+; 
+; compilation unit finished
+;   caught 1 ERROR condition
+
+debugger invoked on a SB-INT:COMPILED-PROGRAM-ERROR in thread
+#<THREAD "main thread" RUNNING {9461061}>:
+  Execution of a form compiled with errors.
+Form:
+  (THE QUICK BROWN FOX)
+Compile-time error:
+  error while parsing arguments to special operator THE:
+  too many elements in
+    (QUICK BROWN FOX)
+  to satisfy lambda list
+    (SB-C::VALUE-TYPE SB-KERNEL:FORM):
+  exactly 2 expected, but got 3
+
+Type HELP for debugger help, or (SB-EXT:EXIT) to exit from SBCL.
+
+restarts (invokable by number or by possibly-abbreviated name):
+  0: [ABORT] Reduce debugger level (to debug level 1).
+  1:         Exit debugger, returning to top level.
+
+((LAMBDA (#:G392)) #<unused argument>)
+   source: (THE QUICK BROWN FOX)
+0[2] :q
+
+:Q
+0[2] ;;Corrected answer
+(thid rd ( '(the quick f brw own fox))
+
+BROWN
+0[2] ;;QUESTION 3.10B
+(LISRT       list 2 and 2 is 4)
+; in: / (8 12)
+;     (LIST 2 AND 2 IS 4)
+; 
+; caught WARNING:
+;   undefined variable: AND
+; 
+; caught WARNING:
+;   undefined variable: IS
+; 
+; compilation unit finished
+;   Undefined variables:
+;     AND IS
+;   caught 2 WARNING conditions
+
+debugger invoked on a UNBOUND-VARIABLE in thread
+#<THREAD "main thread" RUNNING {9461061}>:
+  The variable AND is unbound.
+
+Type HELP for debugger help, or (SB-EXT:EXIT) to exit from SBCL.
+
+restarts (invokable by number or by possibly-abbreviated name):
+  0: [ABORT] Reduce debugger level (to debug level 2).
+  1:         Reduce debugger level (to debug level 1).
+  2:         Exit debugger, returning to top level.
+
+((LAMBDA (#:G395)) #<unused argument>)
+   source: (LIST 2 AND 2 IS 4)
+0[3] (list 2 'is  and 2 'is 4)
+
+(2 AND 2 IS 4)
+0[3] corret xe  cted asbwer    nswe    n  nswer                ;;Quesio  tion       uestio      UESTION 301  .10C
+(+1 '(LENG     ( (lengtg h (list t t t t   )))
+; in: / (8 12)
+;     (1 '(LENGTH (LIST T T T T)))
+; 
+; caught ERROR:
+;   illegal function call
+; 
+; compilation unit finished
+;   caught 1 ERROR condition
+
+debugger invoked on a SB-INT:COMPILED-PROGRAM-ERROR in thread
+#<THREAD "main thread" RUNNING {9461061}>:
+  Execution of a form compiled with errors.
+Form:
+  (1 '(LENGTH (LIST T T T T)))
+Compile-time error:
+  illegal function call
+
+Type HELP for debugger help, or (SB-EXT:EXIT) to exit from SBCL.
+
+restarts (invokable by number or by possibly-abbreviated name):
+  0: [ABORT] Reduce debugger level (to debug level 3).
+  1:         Reduce debugger level (to debug level 2).
+  2:         Reduce debugger level (to debug level 1).
+  3:         Exit debugger, returning to top level.
+
+((LAMBDA (#:G397)) #<unused argument>)
+   source: (1 '(LENGTH (LIST T T T T)))
+0[4] ::  ;;Correc     orrec     ORRECTED ASNWER     NSWER
+(+1 (length (list t t t t)))
+; in: / (8 12)
+;     (1 (LENGTH (LIST T T T T)))
+; 
+; caught ERROR:
+;   illegal function call
+; 
+; compilation unit finished
+;   caught 1 ERROR condition
+
+debugger invoked on a SB-INT:COMPILED-PROGRAM-ERROR in thread
+#<THREAD "main thread" RUNNING {9461061}>:
+  Execution of a form compiled with errors.
+Form:
+  (1 (LENGTH (LIST T T T T)))
+Compile-time error:
+  illegal function call
+
+Type HELP for debugger help, or (SB-EXT:EXIT) to exit from SBCL.
+
+restarts (invokable by number or by possibly-abbreviated name):
+  0: [ABORT] Reduce debugger level (to debug level 4).
+  1:         Reduce debugger level (to debug level 3).
+  2:         Reduce debugger level (to debug level 2).
+  3:         Reduce debugger level (to debug level 1).
+  4:         Exit debugger, returning to top level.
+
+((LAMBDA (#:G398)) #<unused argument>)
+   source: (1 (LENGTH (LIST T T T T)))
+0[5] ;;QUS ESTION 3.10D
+;;
+(CONS   ons    cons 'par trick (seymour marvin))
+; in: / (8 12)
+;     (SEYMOUR MARVIN)
+; 
+; caught WARNING:
+;   undefined variable: MARVIN
+; 
+; caught STYLE-WARNING:
+;   undefined function: SEYMOUR
+; 
+; compilation unit finished
+;   Undefined function:
+;     SEYMOUR
+;   Undefined variable:
+;     MARVIN
+;   caught 1 WARNING condition
+;   caught 1 STYLE-WARNING condition
+
+debugger invoked on a UNBOUND-VARIABLE in thread
+#<THREAD "main thread" RUNNING {9461061}>:
+  The variable MARVIN is unbound.
+
+Type HELP for debugger help, or (SB-EXT:EXIT) to exit from SBCL.
+
+restarts (invokable by number or by possibly-abbreviated name):
+  0: [ABORT] Reduce debugger level (to debug level 5).
+  1:         Reduce debugger level (to debug level 4).
+  2:         Reduce debugger level (to debug level 3).
+  3:         Reduce debugger level (to debug level 2).
+  4:         Reduce debugger level (to debug level 1).
+  5:         Exit debugger, returning to top level.
+
+((LAMBDA (#:G399)) #<unused argument>)
+   source: (SEYMOUR MARVIN)
+0[6] (cons 'par trick '(ser ymour r marcin   vin))
+
+(PATRICK SEYMOUR MARVIN)
+0[6] ;;Q	ues     ;	ESTU    QUESTION 3.10 E
+;;
+(CONS    cons 'partick(list        (list seymour mari cin   vin))
+; in: / (8 12)
+;     (LIST SEYMOUR MARVIN)
+; 
+; caught WARNING:
+;   undefined variable: MARVIN
+; 
+; caught WARNING:
+;   undefined variable: SEYMOUR
+; 
+; compilation unit finished
+;   Undefined variables:
+;     MARVIN SEYMOUR
+;   caught 2 WARNING conditions
+
+debugger invoked on a UNBOUND-VARIABLE in thread
+#<THREAD "main thread" RUNNING {9461061}>:
+  The variable SEYMOUR is unbound.
+
+Type HELP for debugger help, or (SB-EXT:EXIT) to exit from SBCL.
+
+restarts (invokable by number or by possibly-abbreviated name):
+  0: [ABORT] Reduce debugger level (to debug level 6).
+  1:         Reduce debugger level (to debug level 5).
+  2:         Reduce debugger level (to debug level 4).
+  3:         Reduce debugger level (to debug level 3).
+  4:         Reduce debugger level (to debug level 2).
+  5:         Reduce debugger level (to debug level 1).
+  6:         Exit debugger, returning to top level.
+
+((LAMBDA (#:G401)) #<unused argument>)
+   source: (LIST SEYMOUR MARVIN)
+0[7] (cons 'par trick (  list 'seymour 'marcib   cin   vin))
+
+(PATRICK SE
