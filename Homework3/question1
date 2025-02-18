@@ -1,0 +1,83 @@
+Script started on 2025-02-18 21:30:29+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="151" LINES="18"]
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi/Homework3 [0;36m([1;31mmain[0;36m) [0m$ cat qu[K[KQuestion1.cpp
+//Mausam Rayamajhi
+//CSCI330: homework3
+//Feb18th, 2025
+
+#include <iostream>
+#include <stack>
+#include <vector>
+
+using namespace std;
+
+// Partitioning function
+int partition(vector<int>& arr, int low, int high) {
+    int pivot = arr[high]; // Pivoting the last element
+    int i = low - 1;       // Indexing the smaller element
+
+    for (int j = low; j < high; j++) {
+        if (arr[j] < pivot) { 
+            i++;
+            swap(arr[i], arr[j]); // Swapping if the element is smaller than pivot
+        }
+    }
+    swap(arr[i + 1], arr[high]); // Placing pivot in the correct position
+    return (i + 1);
+}
+
+// Iterativing Quicksort
+void quickSortIterative(vector<int>& arr) {
+    stack<pair<int, int>> s;
+
+    // Push initial low and high index to stack
+    s.push({0, arr.size() - 1});
+
+    while (!s.empty()) {
+        auto [low, high] = s.top();
+        s.pop();
+
+        if (low < high) {
+            int pivotIndex = partition(arr, low, high);
+
+            // Push left sub-array (elements before pivot)
+            if (pivotIndex - 1 > low)
+                s.push({low, pivotIndex - 1});
+
+            // Push right sub-array (elements after pivot)
+            if (pivotIndex + 1 < high)
+                s.push({pivotIndex + 1, high});
+        }
+    }
+}
+
+// Function to print the array
+void printArray(const vector<int>& arr) {
+    for (int num : arr)
+        cout << num << " ";
+    cout << endl;
+}
+
+// Main function
+int main() {
+    vector<int> arr = {10, 7, 8, 9, 1, 5, 3, 4};
+    
+    cout << "Original array: ";
+    printArray(arr);
+    
+    quickSortIterative(arr);
+    
+    cout << "Sorted array: ";
+    printArray(arr);
+    
+    return 0;
+}
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi/Homework3 [0;36m([1;31mmain[0;36m) [0m$ cat Question1.cppexit[Ksbcl;;3.10[2Pexitsbclexit exit[5Psbclexitsbclexitsbclexit exit[Ksbclexit;;3.10[2Psbclexitcat Question1.cpp[Kg++ -std=c++17 -o quicksort Question1.cpp
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi/Homework3 [0;36m([1;31mmain[0;36m) [0m$ ./quicksort 
+Original array: 10 7 8 9 1 5 3 4 
+Sorted array: 1 3 4 5 7 8 9 10 
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi/Homework3 [0;36m([1;31mmain[0;36m) [0m$ ex[K[Kquit
+bash: quit: command not found
+[0;32m@mausam1rayamajhi [1;31m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi/Homework3 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-02-18 21:31:49+00:00 [COMMAND_EXIT_CODE="127"]

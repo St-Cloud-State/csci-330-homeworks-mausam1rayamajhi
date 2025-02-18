@@ -1,0 +1,44 @@
+Script started on 2025-02-18 21:34:01+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="151" LINES="18"]
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi/Homework3 [0;36m([1;31mmain[0;36m) [0m$ cat Question4.;[Klisp
+
+
+(defun insert-into-sorted (item sorted)
+  (cond
+    ((null sorted) (list item))
+    ((<= item (car sorted)) (cons item sorted))
+    (t (cons (car sorted) (insert-into-sorted item (cdr sorted))))))
+
+(defun insertion-sort (unsorted sorted)
+  (if (null unsorted)
+      sorted
+      (insertion-sort (cdr unsorted) (insert-into-sorted (car unsorted) sorted))))
+
+(defun sort-list (lst)
+  (insertion-sort lst '()))
+
+(print (sort-list '(5 2 9 1 5 6)))
+(print (sort-list '(3 1 4 1 5 9 2)))
+(print (sort-list '(99 88 77 66 55)))
+(print (sort-list '(1)))
+(print (sort-list '()))
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi/Homework3 [0;36m([1;31mmain[0;36m) [0m$ ca[K[Ksbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (load "Question4.lisp")
+
+(1 2 5 5 6 9) 
+(1 1 2 3 4 5 9) 
+(55 66 77 88 99) 
+(1) 
+NIL 
+T
+* (edi  xit)
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi/Homework3 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-02-18 21:35:13+00:00 [COMMAND_EXIT_CODE="0"]
