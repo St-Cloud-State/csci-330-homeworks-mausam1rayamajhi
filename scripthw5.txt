@@ -1,0 +1,140 @@
+Script started on 2025-03-18 22:43:15+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="219" LINES="18"]
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (load "Hpme   omework5Q6.; lisp")
+
+T
+* (parse "ixoys") 
+Accepted: ixoys
+NIL
+* (parse "ixoyowdssbes")
+Error: Error: Unexpected end of input at position 10
+NIL
+* (parse "iwosdssb") 
+Error: Error: Invalid character 's' at position 3. Expected one of 'x', 'y', 'z', 'w'.
+NIL
+* (parse "iyos") 
+Error: Error: Invalid character 's' at position 3. Expected one of 'x', 'y', 'z', 'w'.
+NIL
+* (parse "ixodwb")
+Error: Error: Invalid character 'd' at position 3. Expected one of 'x', 'y', 'z', 'w'.
+NIL
+* E (exit)
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (load "Homwork    ework5Q6.lisp' ")
+
+T
+* (parse "ixoys")         
+Accepted: ixoys
+NIL
+* (parse "ixoyowdssbes") 
+Error: Error: Unexpected end of input at position 10
+NIL
+* (parse "iwosdssb")    
+Error: Error: Expected 'x', 'y', 'z', or 'w' after 'o' at position 3.
+NIL
+* (parse "iyos")
+Error: Error: Expected 'x', 'y', 'z', or 'w' after 'o' at position 3.
+NIL
+* (parse "ixodwb")
+Error: Error: Expected 'x', 'y', 'z', or 'w' after 'o' at position 3.
+NIL
+* (parse "ixyodssb")
+Error: Error: Unexpected character 'y' at position 2. Expected 's' or 'd'.
+NIL
+* (parse "izoyos")
+Error: Error: Expected 'x', 'y', 'z', or 'w' after 'o' at position 5.
+NIL
+* (parse "ixo") 
+Error: Error: Expected 'x', 'y', 'z', or 'w' after 'o' at position 3.
+NIL
+* (parse "idsss")
+Error: Error: Invalid character 'd' at position 1. Expected one of 'x', 'y', 'z', 'w'.
+NIL
+* (parse "ixozw")    
+Error: Error: Unexpected character 'w' at position 4. Expected 's' or 'd'.
+NIL
+* (parse "iwsdb")
+Error: Error: Unexpected end of input at position 3
+NIL
+* (parse "i")
+Error: Error: Unexpected end of input while parsing G at position 1
+NIL
+* (parse "idbb") 
+Error: Error: Invalid character 'd' at position 1. Expected one of 'x', 'y', 'z', 'w'.
+NIL
+* (parse "ixosyz")
+Error: Error: Expected 'x', 'y', 'z', or 'w' after 'o' at position 3.
+NIL
+* (exit)
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* ( (load "Homework5Q6.lisp")
+
+T
+* (parse "ixoys")
+Accepted: ixoys
+NIL
+* (parse "ixoyowdssbes") 
+Error: Error: Unexpected end of input at position 10
+NIL
+* (parse "iwosdssb")
+Error: Error: Invalid character 's' at position 3. Expected one of 'x', 'y', 'z', 'w'.
+NIL
+* exity     (exit)
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (load "Homework5Q6.lisp")
+
+T
+* (parse "iwosdssb")
+Error: Error: Invalid character 's' at position 3. Expected one of 'x', 'y', 'z', 'w'.
+NIL
+* (parse "ixoyowdssbes")
+Error: Error: Unexpected end of input at position 10
+NIL
+* (exit)
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* ( (load "Homework5Q6.lisp")
+
+T
+* (parse "ixoyowdssbes")
+Error: Error: Unexpected end of input at position 10
+NIL
+* cler    (exit)
+[0;32m@mausam1rayamajhi [0m➜ [1;34m/workspaces/csci-330-homeworks-mausam1rayamajhi [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-03-18 23:08:00+00:00 [COMMAND_EXIT_CODE="0"]
